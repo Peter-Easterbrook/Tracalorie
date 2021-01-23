@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  min-height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background: rgb(228, 231, 235);
+  background: linear-gradient(
+    360deg,
+    rgba(228, 231, 235, 1) 0%,
+    rgba(161, 172, 184, 1) 100%
+  );
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+.clear-btn.btn.blue-grey.lighten-3 {
+  border: 1px solid red;
+  color: red;
+}
