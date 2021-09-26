@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 *,
 *::before,
 *::after {
@@ -10,8 +9,6 @@ html:focus-within {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   min-height: 100vh;
@@ -56,6 +53,13 @@ button,
 textarea,
 select {
   font: inherit;
+}
+.brand-logo {
+  font-weight: 300;
+}
+
+label.label {
+  font-size: 1rem;
 }
 .clear-btn.btn.blue-grey.lighten-3 {
   border: 1px solid red;

@@ -7,14 +7,34 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js" defer></script>
 
     <!-- Bootstrap CSS -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
-      crossorigin="anonymous"
-    ></script>
+
     <link
       rel="stylesheet"
       type="text/css"
@@ -35,7 +55,7 @@
     <nav>
       <div class="nav-wrapper blue-grey darken-4">
         <div class="container">
-          <a href="#" class="brand-logo center">Tracalorie</a>
+          <h6 class="brand-logo center">Tracalorie</h6>
           <ul class="right">
             <li>
               <a href="" class="clear-btn btn blue-grey lighten-3">clear all</a>
@@ -45,8 +65,12 @@
       </div>
     </nav>
     <br />
+    <br />
+    <br />
+    <br />
     <div class="container">
       <!-- Form Card -->
+
       <div class="card blue-grey darken-2">
         <div class="card-content">
           <span class="card-title white-text">Add Meal / Food Item</span>
@@ -54,7 +78,7 @@
             <div class="row">
               <div class="input-field col s6">
                 <input type="text" placeholder="Add Item" id="item-name" />
-                <label for="item-name">Meal</label>
+                <label for="item-name" class="card-title">Meal</label>
               </div>
               <div class="input-field col s6">
                 <input
@@ -62,7 +86,7 @@
                   placeholder="Add Calories"
                   id="item-calories"
                 />
-                <label for="item-calories">Calories</label>
+                <label for="item-calories" class="card-title">Calories</label>
               </div>
               <button class="add-btn btn green accent-4 pull-right">
                 <i class="fa fa-plus"></i> Add Meal
@@ -85,26 +109,7 @@
         Total Calories: <span class="total-calories">0</span>
       </h3>
       <!-- Item List -->
-      <ul id="item-list" class="collection">
-        <!-- <li class="collection-item" id="item-0">
-          <strong> Steak Dinner: </strong> <em>1200 Calories</em>
-          <a href="#" class="secondary-content">
-            <i class="edit-item fa fa-pencil"></i>
-          </a>
-        </li>
-        <li class="collection-item" id="item-0">
-          <strong> Cookie: </strong> <em>400 Calories</em>
-          <a href="#" class="secondary-content">
-            <i class="edit-item fa fa-pencil"></i>
-          </a>
-        </li>
-        <li class="collection-item" id="item-0">
-          <strong> Eggs: </strong> <em>300 Calories</em>
-          <a href="#" class="secondary-content">
-            <i class="edit-item fa fa-pencil"></i>
-          </a>
-        </li> -->
-      </ul>
+      <ul id="item-list" class="collection"></ul>
     </div>
     <script>
       VANTA.FOG({
@@ -116,8 +121,11 @@
         midtoneColor: 0xa4ff,
       });
     </script>
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="script.js"></script>
   </body>
 </html>
